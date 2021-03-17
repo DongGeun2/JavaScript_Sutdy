@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var video;
+	var canvas;
+	window.onload = function(){
+		video = document.getElementById("video");
+		canvas = document.getElementById("screen");
+	}
+	
+	function capture(){
+		var cx = canvas.getContext("2d");
+		console.log(cx);
+		canvas.width=video.clientWidth;
+		canvas.height=video.clientHeight;
+		cx.drawImage(video,0,0,video.clientWidth,video.clientHeight);
+	
+	}
+	
+</script>
+</head>
+<body>
+
+	<video  id="video" src="video/steak.mp4" type="video/mp4" width="600"  autoplay muted controls></video>
+
+	<canvas id=screen style="border: 1px solid black; width: 544px; height: 306px"></canvas>
+	<button onclick="capture()">버튼</button>
+	
+</body>
+</html>

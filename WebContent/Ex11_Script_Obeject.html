@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* 
+		javascript 다양한 내장 객체 제공 : new 통해서 ... 또는 그냥 ( 이미 new 되어 있는 것 )
+		ex) Date(), Array() 제공
+		
+	*/
+	let today = new Date();
+	document.write(today + "<br>");	
+	document.write(today.getFullYear() + "<br>");	
+	document.write(today.getMonth() + 1 + "<br>");		
+	document.write(today.getDate() + "<br>");	
+	document.write(today.getHours() + "<br>");		
+	document.write(today.getMinutes() + "<br>");	
+	document.write(today.getSeconds + "<br>");	
+	
+	// Java : Math.Random() >> math 클래스 static 함수 >> Random
+	document.write(Math.random() + "<br>"); // 0 <= 범위 < 1 
+	document.write(parseInt((Math.random()*45) + 1) + "<br>");
+	
+	document.write(Math.round(3.5678) + "<br>");
+	document.write(Math.max(3,8,99,55,10) + "<br>");
+	
+	// POINT 문자열 관련 함수
+	let str="ABCDEF";
+	
+	// document.write()
+	with(document){
+		write(str + "<br>");
+		write(str.length + "<br>");
+		write(str.charAt(2) + "<br>");
+		write(str.indexOf("D") + "<br>");
+		write(str.concat("홍길동") + "<br>");
+		// slice(start, end)
+		// subString(start, end)
+		// substr(start, length)
+		
+		let str2 = str.replace("E", "ZZZZZZZZ");
+		write(str2 + "<br>");
+		
+		// 	let str="ABCDEF";
+		write(str.substring(2, 4) + "<br>");
+		
+		let strarr = "A B C D";
+		let arr = strarr.split(" ");
+		write(arr);
+		// TODAY POINT
+		// java : 개선된 for문
+		
+		// MS , javascript >> in
+		// javascript : for(let s in arr){}
+		write("<br>");
+		for(let index in arr){
+			write(arr[index] + "<br>");
+		}
+		// 값이 아닌 인덱스 번호값이 나온다.
+		
+	}
+
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
