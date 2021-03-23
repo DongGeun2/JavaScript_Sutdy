@@ -7,7 +7,7 @@
  // 요청주소 : 192.168.0.128:8090/Webclient/Ex08_login.jsp?txtuserid=" "&txtpwd=" "
  	String id = request.getParameter("txtuserid");
  	String pwd = request.getParameter("txtpwd");
- 	
+
  	// 그 다음 작업 ( DB insert, select ), 파일 처리를 하던 자기 마음
  	
  %>

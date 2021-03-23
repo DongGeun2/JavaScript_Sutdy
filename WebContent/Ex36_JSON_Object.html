@@ -95,7 +95,7 @@
 	1.오브젝트 리터럴 방식 (객체를 만드는 방법): 클래스 생성과 동시에 객체가 만들어 져요
 	 1.1 리터럴 방식 >> 제일 간단한 방법 > var obj = {}; //var objarr = [] 배열 
 	 1.2 JSON 표기 : {} >> JSON: Java Script Object Notation
-​
+​	
 	ex) var myObj = { "name":"John", "age":31, "city":"New York" };
 	
 	TIP) JSON >> XML (텍스트 기반의 형식화된 문서 제공)
@@ -143,13 +143,14 @@
 				  addr:"서울시 강남구 역삼동",
 				  eat:function(food){
 					  document.write(this.name + "/" + this.addr + "/" + food + "냠냠"); 
-				  }};
+				  }
+		};
 	
 	document.write("<hr>");
 	
 	person.eat("치킨"); // 함수호출
 	
-	// 1. 속성 제거 긴으
+	// 1. 속성 제거 기능
 	delete(product.년도);
 	console.log(product);
 	

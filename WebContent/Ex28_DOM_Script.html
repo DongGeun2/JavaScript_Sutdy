@@ -13,10 +13,12 @@
 			//
 			//document.getElementById("imgs").src = 
 			let index = 0;
+			console.log(myphotos.length);
 			document.getElementById("prv").onclick = function(){
 				if(index == 0){
 					index = myphotos.length;
 				}
+				console.log(index);
 				document.getElementById("imgs").src = myphotos[--index];
 				
 			}
@@ -25,10 +27,11 @@
 				if(++index == myphotos.length){
 					index=0;
 				}
+				console.log(index);
 				document.getElementById("imgs").src = myphotos[index];
 				
 			}
-		
+			
 		}
 	</script>
 </head>
